@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: first-argocd-demo-app
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/Sid-1819/demo-k8s
+    targetRevision: main
+    path: k8s
+
+  destination: 
+    server: https://kubernetes.default.svc
+    namespace: demo-k8s-practice
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
