@@ -10,6 +10,8 @@ spec:
     repoURL: https://github.com/Sid-1819/demo-k8s
     targetRevision: main
     path: k8s
+    directory:
+      recurse: true
 
   destination: 
     server: https://kubernetes.default.svc
