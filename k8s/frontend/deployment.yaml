@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: frontend:latest
+          image: sid1819/demo-frontend:latest
           ports:
             - containerPort: 3000

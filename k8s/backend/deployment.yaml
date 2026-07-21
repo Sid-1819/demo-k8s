@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: backend
-          image: backend:latest
+          image: sid1819/demo-backend:latest
           ports:
             - containerPort: 8000
