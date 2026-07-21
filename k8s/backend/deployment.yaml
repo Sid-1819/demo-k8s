@@ -18,3 +18,6 @@ spec:
           image: sid1819/demo-backend:latest
           ports:
             - containerPort: 8000
+          env:
+            - name: DATABASE_URL
+              value: postgresql://user:password@postgres-service:5432/db
