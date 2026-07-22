@@ -1,0 +1,11 @@
+apiVersion: secrets.infisical.com/v1beta1
+kind: InfisicalConnection
+metadata:
+  name: my-infisical-connection
+spec:
+  address: https://eu.infisical.com
+  # tls:
+  #  caCertificate:
+  #   name: secret-containing-ca-certificate
+  #   key: ca.crt
+  #   namespace: default
