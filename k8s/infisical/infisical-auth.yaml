@@ -5,14 +5,14 @@ metadata:
 spec:
   infisicalConnectionRef:
     name: my-infisical-connection
-    namespace: default
+    namespace: demo-k8s-practice
   method: universal
   universal:
     clientIdRef:
       name: universal-auth-credentials
-      namespace: default
+      namespace: demo-k8s-practice
       key: clientId
     clientSecretRef:
       name: universal-auth-credentials
-      namespace: default
+      namespace: demo-k8s-practice
       key: clientSecret

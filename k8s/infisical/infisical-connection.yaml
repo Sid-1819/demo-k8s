@@ -8,4 +8,4 @@ spec:
   #  caCertificate:
   #   name: secret-containing-ca-certificate
   #   key: ca.crt
-  #   namespace: default
+  #   namespace: demo-k8s-practice
